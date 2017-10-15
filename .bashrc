@@ -23,8 +23,6 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# If set, the pattern "**" used in a pathname expansion context will
-# match all files and zero or more directories and subdirectories.
 #shopt -s globstar
 
 # make less more friendly for non-text input files, see lesspipe(1)
@@ -134,6 +132,8 @@ VISUAL=vim
 EDITOR="$VISUAL"
 mkdir -p ~/.vim/colors
 # Larrys bashrc
-# Larrys extra editions ################################
+# Larrys extra additions ################################
 # Larrys custom aliases #
 alias gzz='gcc -Wall -Wextra -pedantic -g'
+alias chpy='chmod 755 *.py'
+alias myssh='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
