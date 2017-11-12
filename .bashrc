@@ -87,7 +87,7 @@ fi
 
 # some more ls aliases
 alias ll='ls -alF'
-alias la='ls -A'
+# alias la='ls -A'
 alias l='ls -CF'
 
 # Larry's home rolled aliases
@@ -138,3 +138,4 @@ alias gzz='gcc -Wall -Wextra -pedantic -g'
 alias chpy='chmod 755 *.py'
 alias myssh='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
 alias servethisfolder='python -m SimpleHTTPServer'
+alias la='ls -ld .[!.]*'
