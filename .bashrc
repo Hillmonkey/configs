@@ -136,6 +136,9 @@ mkdir -p ~/.vim/colors
 # Larrys custom aliases #
 alias gzz='gcc -Wall -Wextra -pedantic -g'
 alias chpy='chmod 755 *.py'
-alias myssh='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
+alias myssh_web1='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
+alias myssh_web2='ssh -i ~/.ssh/holberton ubuntu@144.217.246.148'
+alias myssh_lb='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
 alias servethisfolder='python -m SimpleHTTPServer'
 alias la='ls -ld .[!.]*'
+alias testall='python3 -m unittest discover tests'
