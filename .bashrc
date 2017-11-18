@@ -87,7 +87,7 @@ fi
 
 # some more ls aliases
 alias ll='ls -alF'
-alias la='ls -A'
+# alias la='ls -A'
 alias l='ls -CF'
 
 # Larry's home rolled aliases
@@ -136,7 +136,11 @@ mkdir -p ~/.vim/colors
 # Larrys custom aliases #
 alias gzz='gcc -Wall -Wextra -pedantic -g'
 alias chpy='chmod 755 *.py'
-alias myssh='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
+alias myssh_web1='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
+alias myssh_lb='ssh -i ~/.ssh/holberton ubuntu@144.217.246.148'
+alias myssh_web2='ssh -i ~/.ssh/holberton ubuntu@144.217.246.226'
 alias servethisfolder='python -m SimpleHTTPServer'
 alias mymy='mysql -hlocalhost -uroot -p'
 alias vag='vagrant up && vagrant ssh' # add this to repo, later
+alias la='ls -ld .[!.]*'
+alias testall='python3 -m unittest discover tests'
