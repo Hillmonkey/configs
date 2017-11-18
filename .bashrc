@@ -138,3 +138,5 @@ alias gzz='gcc -Wall -Wextra -pedantic -g'
 alias chpy='chmod 755 *.py'
 alias myssh='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
 alias servethisfolder='python -m SimpleHTTPServer'
+alias mymy='mysql -hlocalhost -uroot -p'
+alias vag='vagrant up && vagrant ssh' # add this to repo, later
