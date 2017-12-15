@@ -144,3 +144,6 @@ alias mymy='mysql -hlocalhost -uroot -p'
 alias vag='vagrant up && vagrant ssh' # add this to repo, later
 alias la='ls -ld .[!.]*'
 alias testall='python3 -m unittest discover tests'
+alias load_bal='144.217.246.148'
+alias web1='142.44.167.249'
+alias web2='144.217.246.226'
