@@ -149,3 +149,4 @@ alias web1='142.44.167.249'
 alias web2='144.217.246.226'
 # example jsonpp usage: "jsonpp < myfile.json" or "cat myfile.json | jsonpp"
 alias jsonpp="python -c 'import sys, json; print json.dumps(json.load(sys.stdin), sort_keys=True, indent=2)'"
+alias chjs='chmod 755 *.js'
