@@ -90,8 +90,6 @@ alias ll='ls -alF'
 # alias la='ls -A'
 alias l='ls -CF'
 
-# Larry's home rolled aliases
-alias find-git='find . -d | grep .git$'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -131,11 +129,15 @@ export PS1="\[\033[1;30m\]\u \[\033[0;37m\] \[\033[1;32m\]\w\[\033[0m\]\n\[\033[
 VISUAL=vim
 EDITOR="$VISUAL"
 mkdir -p ~/.vim/colors
+
 # Larrys bashrc
 # Larrys extra additions ################################
-# Larrys custom aliases #
+# Larry's home rolled aliases
+alias find-git='find . -d | grep .git$'
 alias gzz='gcc -Wall -Wextra -pedantic -g'
 alias chpy='chmod 755 *.py'
+alias chjs='chmod 755 *.js'
+alias chsh='chmod 755 *.sh'
 alias myssh_web1='ssh -i ~/.ssh/holberton ubuntu@142.44.167.249'
 alias myssh_lb='ssh -i ~/.ssh/holberton ubuntu@144.217.246.148'
 alias myssh_web2='ssh -i ~/.ssh/holberton ubuntu@144.217.246.226'
@@ -151,4 +153,12 @@ alias semijq='semistandard  --global $ '
 alias airbnb='HBNB_MYSQL_USER=hbnb_dev HBNB_MYSQL_PWD=hbnb_dev_pwd HBNB_MYSQL_HOST=localhost HBNB_MYSQL_DB=hbnb_dev_db HBNB_TYPE_STORAGE=db python3 -m ~/AirBnb_clone_v4/web_dynamic.0-hbnb'
 # example jsonpp usage: "jsonpp < myfile.json" or "cat myfile.json | jsonpp"
 alias jsonpp="python -c 'import sys, json; print json.dumps(json.load(sys.stdin), sort_keys=True, indent=2)'"
-alias chjs='chmod 755 *.js'
+
+complete -C /usr/local/bin/vault vault
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/lmadeo/gcloud/google-cloud-sdk/path.bash.inc' ]; then source '/home/lmadeo/gcloud/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/lmadeo/gcloud/google-cloud-sdk/completion.bash.inc' ]; then source '/home/lmadeo/gcloud/google-cloud-sdk/completion.bash.inc'; fi
+source <(kubectl completion bash)
